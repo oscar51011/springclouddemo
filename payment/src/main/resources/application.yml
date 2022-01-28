@@ -2,11 +2,16 @@ server:
   port: 8081
 
 spring:
+  application: 
+    name: payment-service
   datasource:
     driver-class-name: org.h2.Driver
     url: jdbc:h2:mem:testdb
     username: sa
     password:
+  jpa:
+    hibernate:
+      ddl-auto: none #避免spring-data-jpa啟動時重建database
   h2:
     console:
       enabled: true
