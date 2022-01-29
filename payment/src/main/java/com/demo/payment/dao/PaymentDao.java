@@ -3,7 +3,7 @@ package com.demo.payment.dao;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import com.demo.payment.entity.Payment;
+import com.demo.payment.bean.entity.Payment;
 
 /**
  * 付款 DAO

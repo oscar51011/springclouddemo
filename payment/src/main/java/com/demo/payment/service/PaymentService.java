@@ -1,6 +1,6 @@
 package com.demo.payment.service;
 
-import com.demo.payment.entity.Payment;
+import com.demo.payment.bean.entity.Payment;
 
 /**
  * 定義付款的介面

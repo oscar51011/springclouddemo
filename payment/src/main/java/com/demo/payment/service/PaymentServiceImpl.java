@@ -3,8 +3,8 @@ package com.demo.payment.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.demo.payment.bean.entity.Payment;
 import com.demo.payment.dao.PaymentDao;
-import com.demo.payment.entity.Payment;
 
 /**
  * 實作付款服務
