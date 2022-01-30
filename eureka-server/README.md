@@ -4,7 +4,8 @@ Spring Cloud Eureka 為 Spring Cloud Nexflix 的模組 <br>
 用來處理 微服務的 服務註冊 & 發現 <br>
 
 分成兩個部分:
-####### Eureka Server
+
+###### Eureka Server
 
 1. 引入 maven dependency: spring-cloud-starter-netflix-eureka-server
 2. 註冊 @EnableEurekaServer
