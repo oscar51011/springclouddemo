@@ -1,5 +1,6 @@
 package com.demo.order.config;
 
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
@@ -18,6 +19,8 @@ public class ApplicationContextConfig {
 	 * @return
 	 */
 	@Bean
+	// 2021-01-31 加入spring cloud 負載均衡機制 
+	@LoadBalanced
 	public RestTemplate getRestTemplate() {
 		return new RestTemplate();
 	}

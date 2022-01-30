@@ -28,8 +28,12 @@ EX:
 3. 啟動 Server 後即可看到 DS Replicas 看到對應的 server 資訊       
 
 ###### Eureka Client
+1. 引入 maven dependency: spring-cloud-starter-netflix-eureka-client <br>
+2. 註冊 @EnableEurekaClient <br>
+3. 撰寫 YAML 檔案 <br>
+  如果 eureka 有群集, defaultZone 要註冊所有群集 <br>
+  eureka 要實現 **負載均衡** 的話要在 呼叫 RestTemplate 時撰寫 @LoadBalanced <br>
+4. 呼叫另一個微服務的 URL 就不是寫死了, 而是選擇 eureka 註冊的 application <br>
+   ( 可查看 application.yml 的 spring.application.name 生成時會全部轉成大寫) <br>
+   會根據 application 指向對應的服務
 
-1. 引入 maven dependency: spring-cloud-starter-netflix-eureka-client
-2. 註冊 @EnableEurekaClient
-3. 撰寫 YAML 檔案
-	

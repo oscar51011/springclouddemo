@@ -21,4 +21,9 @@ public class PaymentBean {
 	 * 支付價格
 	 */
 	private Integer price;
+	
+	/**
+	 * 服務埠號
+	 */
+	private String serverPort;
 }
