@@ -9,7 +9,7 @@
   <packaging>pom</packaging>
     
   <name>springclouddemo</name>
-  <description>ç·´ç¿’ spring cloud mircoservice</description>
+  <description>½m²ß spring cloud mircoservice</description>
 
   <parent>
      <groupId>org.springframework.boot</groupId>
@@ -18,7 +18,7 @@
         <relativePath/>
    </parent>
   
-  <!-- çµ±ä¸€ç®¡ç†ç‰ˆæœ¬ -->
+  <!-- ²Î¤@ºÞ²zª©¥» -->
   <properties>
   	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   	<lombok.version>1.18.20</lombok.version>
@@ -27,18 +27,18 @@
 
   
   <!--
-  	ç”¨åœ¨ parent pom , èƒ½è®“å­é …ç›®ä½¿ç”¨çµ±ä¸€å°ˆæ¡ˆçš„ç‰ˆæœ¬
-  	dependencyManagement åªæ˜¯å®£å‘Šç”¨é€”
+  	¥Î¦b parent pom , ¯àÅý¤l¶µ¥Ø¨Ï¥Î²Î¤@±M®×ªºª©¥»
+  	dependencyManagement ¥u¬O«Å§i¥Î³~
    -->
   <dependencyManagement>
   	<dependencies>
-	  	<!-- ä»¥ä¸‹ä¸‰å€‹çµ„ä»¶, ç‰ˆæœ¬æ˜¯æœ‰é—œé€£æ€§çš„, ä¸å¯ä»»æ„æ›´å‹•-->
+	  	<!-- ¥H¤U¤T­Ó²Õ¥ó, ª©¥»¬O¦³Ãö³s©Êªº, ¤£¥i¥ô·N§ó°Ê-->
 	  	<dependency>
 		    <groupId>org.springframework.boot</groupId>
 		    <artifactId>spring-boot-dependencies</artifactId>
 		    <version>2.4.2</version>
 		    <type>pom</type>
-		    <scope>import</scope> <!-- scope è¦å®šç¾©æˆ import -->
+		    <scope>import</scope> <!-- scope ­n©w¸q¦¨ import -->
 		</dependency>
 
 		<!-- Spring cloud dependency 2020.0.1 -->  	
@@ -91,6 +91,7 @@
   	<module>payment</module>
   	<module>order</module>
   	<module>eureka-server</module>
+    <module>eureka-server2</module>
   </modules>
   
 </project>

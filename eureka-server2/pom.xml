@@ -7,10 +7,10 @@
     <version>1.0-SNAPSHOT</version>
   </parent>
 
-  <artifactId>eureka-server</artifactId>
-  <name>eureka-server</name>
+  <artifactId>eureka-server2</artifactId>
+  <name>eureka-server2</name>
   
-  <!-- eureka server 使用 JDK 11 -->
+   <!-- eureka server 使用 JDK 11 -->
   <properties>
 	<maven.compiler.source>11</maven.compiler.source>
 	<maven.compiler.target>11</maven.compiler.target>

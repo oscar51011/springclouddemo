@@ -1,11 +1,12 @@
 server:
   port: 7001
-  
+
+# 製作群集, 採用互相註冊的形式, eureka-server 註冊 eureka-server2   
 eureka:
   instance:
-    hostname: localhost # eureka server instance
+    hostname: eureka-server.com # eureka server instance
   client:
     register-with-eureka: false # server 不用註冊自己
-    fetch-registry: false # 代表為註冊中心, 不用去搜尋服務
+    fetch-registry: false # 代表為註冊中心
     service-url:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka
+      defaultZone: http://eureka-server2.com:7002/eureka
