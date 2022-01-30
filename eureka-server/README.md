@@ -34,6 +34,6 @@ EX:
   如果 eureka 有群集, defaultZone 要註冊所有群集 <br>
   eureka 要實現 **負載均衡** 的話要在 呼叫 RestTemplate 時撰寫 @LoadBalanced <br>
 4. 呼叫另一個微服務的 URL 就不是寫死了, 而是選擇 eureka 註冊的 application <br>
-   ( 可查看 application.yml 的 spring.application.name 生成時會全部轉成大寫) <br>
+   ( 可查看 application.yml 的 spring.application.name 註冊服務時會全部轉成大寫的形式) <br>
    會根據 application 指向對應的服務
 
