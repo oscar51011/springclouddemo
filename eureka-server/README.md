@@ -20,11 +20,11 @@ EX:
  127.0.0.1 eureka-server.com
  127.0.0.1 eureka-server2.com
 	   
-2. defaultZone 調整至不同的 eureka server 
-	   EX: 假設有 A, B, C 三台 
-	       A -> B
-	       B -> C
-	       C -> A
+2. defaultZone 調整至不同的 eureka server <br>
+	   EX: 假設有 A, B, C 三台 <br>
+	       A -> B <br>
+	       B -> C <br>
+	       C -> A <br>
 3. 啟動 Server 後即可看到 DS Replicas 看到對應的 server 資訊       
 
 ###### Eureka Client
