@@ -3,7 +3,7 @@
 Spring Cloud Eureka 為 Spring Cloud Nexflix 的模組 <br>
 用來處理 微服務的 服務註冊 & 發現 <br>
 
-分成兩個部分:
+分成兩個部分( Server & Client ):
 
 ###### Eureka Server
 
@@ -11,7 +11,7 @@ Spring Cloud Eureka 為 Spring Cloud Nexflix 的模組 <br>
 2. 註冊 @EnableEurekaServer
 3. 撰寫 YAML 檔案
 	
-###### Eureka群集 
+###### Eureka Server 群集 
 採取 eureka server 互相註冊的模式: ( 測試環境使用 window )
 
 1. 調整 C:\Windows\System32\drivers\etc\hosts 的 ip 對應 domain 資訊
