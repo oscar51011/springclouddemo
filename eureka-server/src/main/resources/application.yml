@@ -8,4 +8,4 @@ eureka:
     register-with-eureka: false # server 不用註冊自己
     fetch-registry: false # 代表為註冊中心, 不用去搜尋服務
     service-url:
-      defaultzone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka

@@ -16,3 +16,11 @@ spring:
     console:
       enabled: true
       path: /h2-console
+      
+# 搭配 Eureka 註冊服務 定時向 server 發送存活的請求      
+eureka:
+  client:
+    register-with-eureka: true # 將client註冊進 eureka
+    fetch-registry: true # 從eureka抓取 註冊消息, 如果為eureka集群, 要true 才能達到 load balance
+    service-url:
+      defaultZone: http://localhost:7001/eureka
