@@ -24,3 +24,6 @@ eureka:
     fetch-registry: true # 從eureka抓取 註冊消息, 如果為eureka集群, 要true 才能達到 load balance
     service-url:
       defaultZone: http://eureka-server.com:7001/eureka, http://eureka-server2.com:7002/eureka # 註冊eureka 群集
+  instance:
+    instance-id: payment-service2 # eureka 顯示服務別名
+    prefer-ip-address: true # 顯示服務IP address
