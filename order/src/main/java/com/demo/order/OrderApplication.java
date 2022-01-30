@@ -2,6 +2,7 @@ package com.demo.order;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /**
  * 新增 訂單 啟動類
@@ -10,6 +11,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *
  */
 @SpringBootApplication
+//註冊為 eureka Client
+@EnableEurekaClient
 public class OrderApplication {
 	
 	public static void main(String[] args) throws Exception {
