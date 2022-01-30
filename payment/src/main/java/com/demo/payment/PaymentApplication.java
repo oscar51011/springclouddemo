@@ -12,6 +12,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
  */
 
 @SpringBootApplication
+// 註冊為 eureka Client
 @EnableEurekaClient
 public class PaymentApplication {
 

@@ -3,7 +3,7 @@ server:
 
 spring:
   application: 
-    name: payment-service
+    name: payment-service # 命名在註冊 Eureka 時會對應其 Application
   datasource:
     driver-class-name: org.h2.Driver
     url: jdbc:h2:mem:testdb
