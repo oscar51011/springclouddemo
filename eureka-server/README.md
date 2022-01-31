@@ -14,11 +14,11 @@ Spring Cloud Eureka 為 Spring Cloud Nexflix 的模組 <br>
 ###### Eureka Server 群集 
 採取 eureka server 互相註冊的模式: ( 測試環境使用 window )
 
-1. 調整 C:\Windows\System32\drivers\etc\hosts 的 ip 對應 domain 資訊
-( 為了讓 127.0.0.1 可以對應 application.yml 的 hostname )
-EX: 
- 127.0.0.1 eureka-server.com
- 127.0.0.1 eureka-server2.com
+1. 調整 C:\Windows\System32\drivers\etc\hosts 的 ip 對應 domain 資訊 <br>
+( 為了讓 127.0.0.1 可以對應 application.yml 的 hostname ) <br>
+EX: <br>
+ 127.0.0.1 eureka-server.com <br>
+ 127.0.0.1 eureka-server2.com <br>
 	   
 2. defaultZone 調整至不同的 eureka server <br>
 	   EX: 假設有 A, B, C 三台 <br>
