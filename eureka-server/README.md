@@ -40,7 +40,7 @@ EX: <br>
    在啟動類 新增 @EnableDiscoveryClient
    在使用時 注入 DiscoveryClient bean 即可使用其功能
 
-##### 服務保護機制
+##### Eureka Server self-preservation mode
 Eureka 是屬於 Client 主動回報自主服務是否存活 , 而非由 Server 頻繁檢查 , Client renew heartbests ( 預設 30 秒 )  <br>
 Server 定期查看註冊的服務是否有定時回傳存活訊息 ( 預設 60 秒 ), 如果已經失效的服務在 過一段時候後 ( 預設 90 秒 ) , 會把服務踢除 <br>
 
