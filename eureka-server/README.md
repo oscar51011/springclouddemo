@@ -40,4 +40,16 @@ EX:
    在啟動類 新增 @EnableDiscoveryClient
    在使用時 注入 DiscoveryClient bean 即可使用其功能
 
+##### 服務保護機制
+Eureka 是屬於 Client 主動回報自主服務是否存活 , 而非由 Server 頻繁檢查 , Client renew heartbests ( 預設 30 秒 )  <br>
+Server 定期查看註冊的服務是否有定時回傳存活訊息 ( 預設 60 秒 ), 如果已經失效的服務在 過一段時候後 ( 預設 90 秒 ) , 會把服務踢除 <br>
+
+但在服務是正常的情況下, 有可能因為網路不穩造成連線問題 ,這種情況不能夠讓服務直接下線, 因此先產生一個保護機制: <br>
+Server 定期會去計算 Client 回傳 heartbests 的比例 , 如果低於 85% 則會啟動 保護機制, 在啟動機制的當下, 服務就算失效也不會被 Server 踢除<br>
+當故障恢復且 heartbeats 恢復高於 85%, 才會關閉 自我保護機制 <br>
+
+
+
+
+
 
