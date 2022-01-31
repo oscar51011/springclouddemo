@@ -1,5 +1,9 @@
 # Eureka
 
+<font color="red"> Eureka 已經停止更新 , 詳細查看如下: </font> <br>
+
+[Nexflie Eureka Wiki on Github](https://github.com/Netflix/eureka/wiki) <br>
+
 Spring Cloud Eureka 為 Spring Cloud Nexflix 的模組 <br>
 用來處理 微服務的 服務註冊 & 發現 <br>
 
