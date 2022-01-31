@@ -1,4 +1,4 @@
-package org.order.openFeign.config;
+package com.order.openFeign.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

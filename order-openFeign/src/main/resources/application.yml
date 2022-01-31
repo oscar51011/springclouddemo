@@ -18,4 +18,5 @@ eureka:
     
 logging:
   level:
-    org.order.openFeign.service.PaymentFeignService: debug    
+    # feign 對應的 interface 配置對應的 level 
+    com.order.openFeign.service.PaymentFeignService: debug    

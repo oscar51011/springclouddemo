@@ -1,4 +1,4 @@
-package org.order.openFeign.bean;
+package com.order.openFeign.bean;
 
 import lombok.Data;
 

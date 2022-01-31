@@ -1,10 +1,11 @@
-package org.order.openFeign.service;
+package com.order.openFeign.service;
 
-import org.order.openFeign.bean.PaymentBean;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+
+import com.order.openFeign.bean.PaymentBean;
 
 /**
  * 新增 payment 介面, 

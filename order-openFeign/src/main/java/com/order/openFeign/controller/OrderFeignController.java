@@ -1,12 +1,13 @@
-package org.order.openFeign.controller;
+package com.order.openFeign.controller;
 
-import org.order.openFeign.bean.PaymentBean;
-import org.order.openFeign.service.PaymentFeignService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.order.openFeign.bean.PaymentBean;
+import com.order.openFeign.service.PaymentFeignService;
 
 /**
  * 實現 訂單 API 接口

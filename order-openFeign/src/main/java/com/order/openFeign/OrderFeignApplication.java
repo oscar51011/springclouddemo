@@ -1,4 +1,4 @@
-package org.order.openFeign;
+package com.order.openFeign;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
