@@ -27,8 +27,8 @@
 
   
   <!--
-  	ç”¨åœ¨ parent pom , èƒ½è®“å­é …ç›®ä½¿ç”¨çµ±ä¸€å°ˆæ¡ˆçš„ç‰ˆæœ¬
-  	dependencyManagement åªæ˜¯å®£å‘Šç”¨é€”
+  	¥Î¦b parent pom , ¯àÅı¤l¶µ¥Ø¨Ï¥Î²Î¤@±M®×ªºª©¥»
+  	dependencyManagement ¥u¬O«Å§i¥Î³~
    -->
   <dependencyManagement>
   	<dependencies>
@@ -93,6 +93,7 @@
   	<module>order</module>
   	<module>eureka-server</module>
     <module>eureka-server2</module>
+    <module>order-openFeign</module>
   </modules>
   
 </project>
