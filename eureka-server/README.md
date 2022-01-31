@@ -36,4 +36,8 @@ EX:
 4. 呼叫另一個微服務的 URL 就不是寫死了, 而是選擇 eureka 註冊的 application <br>
    ( 可查看 application.yml 的 spring.application.name 註冊服務時會全部轉成大寫的形式) <br>
    會根據 application 指向對應的服務
+5. 服務發現 ( DiscoveryCliey ): 用來取得 eureka 上的 服務 & 服務的 instance 資訊 <br>
+   在啟動類 新增 @EnableDiscoveryClient
+   在使用時 注入 DiscoveryClient bean 即可使用其功能
+
 
