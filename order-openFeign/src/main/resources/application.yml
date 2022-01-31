@@ -15,3 +15,7 @@ eureka:
   instance:
     instance-id: order-feign-service # eureka 顯示服務別名
     prefer-ip-address: true # 顯示服務IP address
+    
+logging:
+  level:
+    org.order.openFeign.service.PaymentFeignService: debug    

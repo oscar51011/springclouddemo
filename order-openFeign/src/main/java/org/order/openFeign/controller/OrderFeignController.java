@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @date 2022年1月29日
  */
 @RestController
-@RequestMapping("/orderService")
+@RequestMapping("/orderOpenFeignService")
 public class OrderFeignController {
 	
 	@Autowired
