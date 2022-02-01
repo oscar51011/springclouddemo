@@ -2,6 +2,7 @@ package com.demo.order;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
@@ -12,6 +13,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @SpringBootApplication
 //啟用 Feign Client 服務
 @EnableFeignClients
+@EnableHystrix
 public class OrderOpenFeignHystrixApplication {
 
 	public static void main(String[] args) throws Exception {

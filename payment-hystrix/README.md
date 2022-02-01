@@ -14,5 +14,12 @@ Spring Cloud starter 2020.0.0 以後已經將其移除 <br>
        如果沒有特別定義 fallbackMethod, 就會去呼叫 預設的處理模式。<br>
 
 ###### Hystrix + openFeign ( project: order-openFeign-hystrix )
+1. 在啟動類 啟動 Hystrix 服務: @EnableHystrix <br>
+2. 在 @FeignClient 指定 fallback 實作的 class <br>
+3. 創建實作 fallback 服務的 class 並 implement @FeignClient 介面 <br>
+※ 這樣即可將 fallback 的內容額外實作不會混在業務邏輯裡面 <br>
+4. application.yml 需要開啟 feign.circuitbreaker.enabled: true <br>
+※ 因 spring cloud 2020.0.1 已移除了 hystrix , 因此此專案的 spring cloud 版本太新 <br>
+  導致 無法使用 feign.hystrix.enabled: true, 置換成 circuitbreaker 即可運作 <br>
 
 

@@ -15,3 +15,9 @@ eureka:
   instance:
     instance-id: order-feign-hystrix-service # eureka 顯示服務別名
     prefer-ip-address: true # 顯示服務IP address 
+    
+# 啟動 feign 的 hystrix (但 Spring cloud 2020.0.1 已經移除 hystrix, 因此置換成 circuitbreaker方可運作)
+feign:
+  circuitbreaker:
+    enabled: true    
+    
