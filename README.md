@@ -19,5 +19,5 @@
 3. [Spring Cloud OpenFeign](https://github.com/oscar51011/springclouddemo/tree/master/order-openFeign)
 
 ##### 3. 服務降級/熔斷機制
-1. Hystix
+1. [Hystix](https://github.com/oscar51011/springclouddemo/tree/master/payment-hystrix)
 
