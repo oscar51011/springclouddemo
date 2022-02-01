@@ -27,8 +27,8 @@
 
   
   <!--
-  	用在 parent pom , 能讓子項目使用統一專案的版本
-  	dependencyManagement 只是宣告用途
+  	dependencyManagement declare project jar version, but do not pull remote jar file
+  	pull jar file in child pom
    -->
   <dependencyManagement>
   	<dependencies>
@@ -94,6 +94,8 @@
   	<module>eureka-server</module>
     <module>eureka-server2</module>
     <module>order-openFeign</module>
+    <module>payment-hystrix</module>
+    <module>order-openFeign-hystrix</module>
   </modules>
   
 </project>
