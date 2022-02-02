@@ -33,6 +33,10 @@ Hystrix 預設是打開 熔斷機制的, 預設一段時間內有20請求以上,
 
 ##### Hystrix Dashboard ( project: hystrix-dashoard )
 1. 啟動類新增 @EnableHystrixDashboard 
-2. 啟動後打開 URL 即可看到其 Hystrix Dashboard => http://localhost:9001/hystrix
+2. 啟動後打開 URL 即可看到其 Hystrix Dashboard => http://localhost:9001/hystrix <br>
+3. 調整 dashboard project 的 application.yml <br>
+4. 被監控的服務 啟動類 需要註冊 ServletRegistrationBean 才可以取得監控的資訊 <br> 
+
+ 
 
 

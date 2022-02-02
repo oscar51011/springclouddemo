@@ -29,11 +29,13 @@ public class PaymentServiceImpl implements PaymentService {
 	@Override
 	public String demoPaymentServiceSuccess(Long id) {
 		
-		try {
-			TimeUnit.SECONDS.sleep(1000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
+		System.out.println("success");
+		
+//		try {
+//			TimeUnit.SECONDS.sleep(1000);
+//		} catch (InterruptedException e) {
+//			e.printStackTrace();
+//		}
 		return "thread: " + Thread.currentThread() + " , id:" + id + " success service done!";
 	}
 	
