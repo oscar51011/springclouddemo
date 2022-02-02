@@ -14,7 +14,8 @@ Spring Cloud starter 2020.0.0 以後已經將其移除 <br>
    	b. 可宣告預設錯誤訊息, 在 class levle 加上 @DefaultProperties 定義 global 錯誤訊息<br>
        如果沒有特別定義 fallbackMethod, 就會去呼叫 預設的處理模式。<br>
 
-###### Hystrix + openFeign ( project: order-openFeign-hystrix )
+##### Hystrix 搭配 openFeign ( project: order-openFeign-hystrix )
+
 1. 在啟動類 啟動 Hystrix 服務: @EnableHystrix <br>
 2. 在 @FeignClient 指定 fallback 實作的 class <br>
 3. 創建實作 fallback 服務的 class 並 implement @FeignClient 介面 <br>
