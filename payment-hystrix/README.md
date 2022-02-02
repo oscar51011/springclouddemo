@@ -31,4 +31,8 @@ Hystrix 預設是打開 熔斷機制的, 預設一段時間內有20請求以上,
 失敗一段時間後才會再變成半開形式, 直到通訊恢復 <br>
 
 
+##### Hystrix Dashboard ( project: hystrix-dashoard )
+1. 啟動類新增 @EnableHystrixDashboard 
+2. 啟動後打開 URL 即可看到其 Hystrix Dashboard => http://localhost:9001/hystrix
+
 

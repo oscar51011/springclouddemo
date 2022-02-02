@@ -96,6 +96,7 @@
     <module>order-openFeign</module>
     <module>payment-hystrix</module>
     <module>order-openFeign-hystrix</module>
+    <module>hystrix-dashboard</module>
   </modules>
   
 </project>
