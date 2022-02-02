@@ -67,5 +67,28 @@ public class PaymentServiceImpl implements PaymentService {
 	public String defaultTimeOutMessage() {
 		return "global default timeout error message";
 	}
+
+	/**
+	 * 使用 HystrixCommandProperties demo 熔斷機制
+	 */
+	@HystrixCommand(commandProperties = {
+			// 開啟熔斷機制 ( default 是 true )
+			@HystrixProperty(name = "circuitBreaker.enabled", value = "true"),
+			// 一端時間內有超過 10個以上的請求 , 才會符合開啟熔斷的條件 (default 是 20 )
+			@HystrixProperty(name = "circuitBreaker.requestVolumeThreshold", value = "10"),
+			// 當發生熔斷時, 需要多久時間才會變成 半開的狀態, 讓其中一個請求可以嘗試通過 (default 是 5000 毫秒 )
+			@HystrixProperty(name = "circuitBreaker.sleepWindowInMilliseconds", value = "10000"),
+			// 錯誤率百分比 ( default 是 50%)
+			@HystrixProperty(name = "circuitBreaker.errorThresholdPercentage", value = "60")
+		})	
+	@Override
+	public String demoPaymentServiceCircuitBreaker(Long id) {
+		if( id < 0) {
+			throw new RuntimeException("id should be postive");
+		}
+		return "thread: " + Thread.currentThread() + " , id:" + id + " circuitBreaker service done!";
+	}
+	
+	
 	
 }

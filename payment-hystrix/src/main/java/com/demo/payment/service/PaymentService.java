@@ -8,4 +8,5 @@ package com.demo.payment.service;
 public interface PaymentService {
 	String demoPaymentServiceSuccess(Long id);
 	String demoPaymentServiceTimeOut(Long id);
+	String demoPaymentServiceCircuitBreaker(Long id);
 }

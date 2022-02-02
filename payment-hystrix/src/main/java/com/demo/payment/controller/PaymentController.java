@@ -36,4 +36,11 @@ public class PaymentController {
 		log.info("process is done!");
 		return response;
 	}
+	
+	@GetMapping("/circuitBreakerDemo/{id}")
+	public String demoPaymentServiceCircuitBreaker(@PathVariable Long id) {
+		String response = paymentService.demoPaymentServiceCircuitBreaker(id);
+		log.info("process is done!");
+		return response;
+	}
 }
