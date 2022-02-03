@@ -6,3 +6,5 @@
 2. 配置的方式有兩種: <br>
    a. application.yml 檔案 , 配置 gateway routing 的路徑即可藉由 gateway 導流 <br>
    b. java configuration 配置 <br>
+   
+3. 常用的 Gateway Predicate : [Spring - Route Predicate Factories](https://docs.spring.io/spring-cloud-gateway/docs/3.0.5-SNAPSHOT/reference/html/#gateway-request-predicates-factories)
