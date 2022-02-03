@@ -21,3 +21,6 @@
 ##### 3. 服務降級/熔斷機制
 1. [Hystix](https://github.com/oscar51011/springclouddemo/tree/master/payment-hystrix)
 
+
+##### 4. 閘道器(路由器)
+1. [Spring Cloud Gateway]

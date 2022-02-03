@@ -97,6 +97,7 @@
     <module>payment-hystrix</module>
     <module>order-openFeign-hystrix</module>
     <module>hystrix-dashboard</module>
+    <module>cloud-gateway</module>
   </modules>
   
 </project>
