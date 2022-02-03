@@ -8,3 +8,9 @@
    b. java configuration 配置 <br>
    
 3. 常用的 Gateway Predicate : [Spring - Route Predicate Factories](https://docs.spring.io/spring-cloud-gateway/docs/3.0.5-SNAPSHOT/reference/html/#gateway-request-predicates-factories)
+
+4. Filter: <br>
+   a.[Spring - GatewayFilter](https://docs.spring.io/spring-cloud-gateway/docs/3.0.5-SNAPSHOT/reference/html/#gatewayfilter-factories)<br>
+   b.[Spring - GolbalFilter](https://docs.spring.io/spring-cloud-gateway/docs/3.0.5-SNAPSHOT/reference/html/#global-filters)<br>
+   c. 客製化Filter: 實作
+
