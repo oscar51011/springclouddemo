@@ -16,9 +16,13 @@ spring:
     name: cloud-gateway # 命名在註冊 Eureka 時會對應其 Application
   cloud:
     gateway:
+      discovery:
+        locator:
+          enabled: true # 開啟註冊中心創建routing功能, 以微服務名稱進行routing
       # 可以有多個路由
       routes:
         - id: payment-service # routing Id, 需唯一值
-          uri: http://localhost:8081  #服務路徑
+          # uri: http://localhost:8081  #服務路徑
+          uri: lb://payment-service  #服務路徑為 微服務的 APPLICATION
           predicates:
             - Path=/payment/** # 匹配路徑

@@ -16,6 +16,7 @@ public class PaymentGatewayConfig {
 
 	/**
 	 * 配置方式 如同 application.yml 的 spring.cloud.gateway.routes 同效果
+	 * 使用動態路由配置時, 使用 lb://{微服務的 application.name}
 	 * @param builder
 	 * @return
 	 */
@@ -23,10 +24,10 @@ public class PaymentGatewayConfig {
 	public RouteLocator routes(RouteLocatorBuilder builder) {
 		
 		RouteLocatorBuilder.Builder routes = builder.routes();
-		
+				
 		routes.route("payment-service", 
 				r->r.path("/payment/**")
-					.uri("http://localhost:8081/payment/**")).build();
+					.uri("lb://payment-service")).build();
 		
 		return routes.build();
 	}
