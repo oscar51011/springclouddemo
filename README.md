@@ -24,3 +24,6 @@
 
 ##### 4. 閘道器(路由器)
 1. [Spring Cloud Gateway](https://github.com/oscar51011/springclouddemo/tree/master/cloud-gateway)
+
+##### 5. 服務配置
+1. [Spring Cloud Config](https://github.com/oscar51011/springclouddemo/tree/master/cloud-config)
