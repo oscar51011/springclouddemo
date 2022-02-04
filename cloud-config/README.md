@@ -31,4 +31,9 @@
   <br>
   ※ 專案使用 @Value取得之資訊為git上自定義的值, 需要對應好 key , 否則會找不到
       
-   	      
+##### client 手動 動態更新配置(非以重啟微服務的方式)
+1.新增 @RefreshScope 以利更新設定檔資訊 <br>
+2.調整 bootstrap.yml 暴露 actuator port **(該方案是否有 安全性議題 待研究)**<br>
+3.手動模式 - 打POST 更新專案配置資訊<br>
+  ※ curl -X POST "http://localhost:6003/actuator/refresh
+ 

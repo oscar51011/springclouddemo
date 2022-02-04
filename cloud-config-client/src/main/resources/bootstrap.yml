@@ -22,3 +22,10 @@ spring:
       name: config # resource name
       profile: dev # label 上的 application 資源, 依照不同環境選擇不同的配置文件
       uri: http://localhost:6001 # cloud-config address
+      
+# 暴露監控 port
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
