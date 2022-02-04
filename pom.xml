@@ -98,6 +98,8 @@
     <module>order-openFeign-hystrix</module>
     <module>hystrix-dashboard</module>
     <module>cloud-gateway</module>
+    <module>cloud-config</module>
+    <module>cloud-config-client</module>
   </modules>
   
 </project>

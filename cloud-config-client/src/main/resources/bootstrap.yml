@@ -1,0 +1,24 @@
+# application.yml 為服務配置等級的 設定檔 , bootstrap 為 系統級別的設定檔 , 層級比 application 還要高
+
+server:
+  port: 6003
+  
+# 搭配 Eureka 註冊服務 定時向 server 發送存活的請求      
+eureka:
+  instance:
+    hostname: cloud-config-client
+  client:
+    register-with-eureka: true # 將client註冊進 eureka
+    fetch-registry: true # 從eureka抓取 註冊消息, 如果為eureka集群, 要true 才能達到 load balance
+    service-url:
+      defaultZone: http://eureka-server.com:7001/eureka
+
+spring:
+  application: 
+    name: cloud-config-client # 命名在註冊 Eureka 時會對應其 Application
+  cloud:
+    config:
+      label: master # branch name
+      name: config # resource name
+      profile: dev # label 上的 application 資源, 依照不同環境選擇不同的配置文件
+      uri: http://localhost:6001 # cloud-config address
