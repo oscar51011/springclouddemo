@@ -11,7 +11,7 @@
 ※ cloud-config 需要修改 application.yml 取得對應定義之 github 來源
 
 ```
-
+參考連結:
 
 - [Spring Cloud Config Server](https://docs.spring.io/spring-cloud-config/docs/3.1.1-SNAPSHOT/reference/html/#_spring_cloud_config_server)
 
