@@ -17,7 +17,7 @@ Spring Cloud Sleuth 提供 Spring Boot 分散式追蹤的 解決方案
 2. 啟動 Eeueka Server( project: eureka-server)
 3. 啟動 服務 order ( project: order )
 4. 啟動 服務 payment ( project: payment ) 
-( 兩個服務都需要去 application.yml 調整對應的 zipkin server url
+※※※( 兩個服務都需要去 application.yml 調整對應的 zipkin server url
 ```
 參考連結:<bR>
 1. [Docker - zipkin](https://hub.docker.com/r/openzipkin/zipkin/) 

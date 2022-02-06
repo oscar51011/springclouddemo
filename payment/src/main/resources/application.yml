@@ -5,7 +5,7 @@ spring:
   application: 
     name: payment-service # 命名在註冊 Eureka 時會對應其 Application
   zipkin:
-    base-url: http://172.19.65.95:9411/ # 引入整合 zipkin 追蹤系統
+    base-url: # 引入整合 zipkin 追蹤系統 (請自行安裝 zipkin server ex: http://{VM ip}:9411/ ) 
   datasource:
     driver-class-name: org.h2.Driver
     url: jdbc:h2:mem:testdb
