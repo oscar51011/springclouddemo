@@ -11,6 +11,8 @@ import com.demo.payment.bean.entity.Payment;
 import com.demo.payment.bean.viewBean.PaymentViewBean;
 import com.demo.payment.service.PaymentService;
 
+import lombok.extern.slf4j.Slf4j;
+
 /**
  * 實現付款API接口
  * @author oscar51011
@@ -18,6 +20,7 @@ import com.demo.payment.service.PaymentService;
  */
 @RequestMapping("payment")
 @RestController
+@Slf4j
 public class PaymentController {
 
 	@Autowired
@@ -28,6 +31,8 @@ public class PaymentController {
 	
 	@GetMapping("/{id}")
 	public PaymentViewBean getPaymentById(@PathVariable Long id) {
+		
+		log.info("server port: " + serverPort + " , getPaymentById start");
 		
 		Payment payment = paymentService.getPaymentById(id);
 		

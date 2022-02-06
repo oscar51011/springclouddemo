@@ -4,6 +4,8 @@ server:
 spring:
   application: 
     name: order-service # 命名在註冊 Eureka 時會對應其 Application
+  zipkin:
+    base-url: http://172.19.65.95:9411/ # 引入整合 zipkin 追蹤系統
   
 # 搭配 Eureka 註冊服務 定時向 server 發送存活的請求      
 eureka:

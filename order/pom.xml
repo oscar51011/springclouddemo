@@ -54,12 +54,18 @@
     	<artifactId>h2</artifactId>
 	</dependency>
 	
-	<!-- 
+	<!-- 提供分散式追蹤的解決方案 -->
 	<dependency>
-    	<groupId>com.alibaba</groupId>
-    	<artifactId>druid-spring-boot-starter</artifactId>
+		<groupId>org.springframework.cloud</groupId>
+    	<artifactId>spring-cloud-starter-sleuth</artifactId>
 	</dependency>
-	-->
+	
+	<!-- 整合zipkin(分散式追蹤系統) -->
+	<dependency>
+		<groupId>org.springframework.cloud</groupId>
+		<artifactId>spring-cloud-sleuth-zipkin</artifactId>		
+	</dependency>
+	
   </dependencies>  
 
  

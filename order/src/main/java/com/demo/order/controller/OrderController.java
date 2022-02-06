@@ -30,6 +30,9 @@ public class OrderController {
 
 	@GetMapping("/payment/{id}")
 	public PaymentBean getPaymentInfo(@PathVariable Long id) {
+		
+		log.info("OrderServer, call getPayment mircoService Info start:");
+		
 		return orderService.getPaymentInfo(id);
 	}
 	
