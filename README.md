@@ -27,3 +27,6 @@
 
 ##### 5. 服務配置
 1. [Spring Cloud Config](https://github.com/oscar51011/springclouddemo/tree/master/cloud-config)
+
+##### 6. 鏈路追蹤
+1. [Spring Cloud Sleuth](https://github.com/oscar51011/springclouddemo/tree/master/order)
