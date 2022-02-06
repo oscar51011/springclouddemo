@@ -1,5 +1,18 @@
 # Sping Cloud Config
 
+```
+專案需求:
+1. 新增 自訂義 git repository ( 存放共用的 設定檔 )
+   範例: https://github.com/oscar51011/spring-cloud-config-demo
+2. 啟動 eureka server ( project: eureka-server )
+3. 啟動 服務 - 統一專案配置 server ( project: cloud-config)
+4. 啟動 微服務 - client ( project: cloud-config-client)
+
+※ cloud-config 需要修改 application.yml 取得對應定義之 github 來源
+
+```
+
+
 - [Spring Cloud Config Server](https://docs.spring.io/spring-cloud-config/docs/3.1.1-SNAPSHOT/reference/html/#_spring_cloud_config_server)
 
 ##### 專案配置 spring Cloud Config Server ( project: cloud-config)
